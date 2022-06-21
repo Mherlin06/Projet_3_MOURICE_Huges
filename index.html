@@ -8,9 +8,95 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
-    <title>OhMyFood!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Accueil - OhMyFood!</title>
 </head>
 <body>
-
+    <header>
+        <div class="heading">
+            <h1>ohmyfood</h1>
+        </div>
+        <form action="#" class="search-form">
+            <div class="search-form__search-bar">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" id="location" name="location" value="Paris, Belleville">
+            </div>
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <input type="submit" class="search-form__btn" value="Explorer nos restaurants">
+        </form>
+    </header>
+    <main>
+        <section class="instructions">
+            <h2>Fonctionnement</h2>
+            <ol class="step-list">
+                <li class="step-list__card">
+                    <div>1</div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p>Choisissez un restaurant</p>
+                </li>
+                <li class="step-list__card">
+                    <div>2</div>
+                    <i class="fa-regular fa-list-ul"></i>
+                    <p>Composez votre menu</p>
+                </li>
+                <li class="step-list__card">
+                    <div>3</div>
+                    <i class="fa-regular fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+                </li>
+            </ol>
+        </section>
+        <section class="resto">
+            <h2>Restaurants</h2>
+            <a href="menus/la_palette_du goût.html" class="resto__card">
+                <img src="" alt="restaurant la palette du gout">
+                <div class="card-info">
+                    <div class="card-info__heading">
+                        <h4>La palette du goût</h4>
+                        <p>Ménilmontant</p>
+                    </div>
+                    <div class="like"></div>
+                </div>
+            </a>
+            <a href="menus/la_note_enchantée.html" class="resto__card">
+                <img src="" alt="restaurant la note enchantée">
+                <div class="card-info">
+                    <div class="card-info__heading">
+                        <h4>La note enchantée</h4>
+                        <p>Charonne</p>
+                    </div>
+                    <div class="like"></div>
+                </div>
+            </a>
+            <a href="menus/à_la_française.html" class="resto__card">
+                <img src="" alt="restaurant à la française">
+                <div class="card-info">
+                    <div class="card-info__heading">
+                        <h4>&Acirc; la française</h4>
+                        <p>Cité Rouge</p>
+                    </div>
+                    <div class="like"></div>
+                </div>
+            </a>
+            <a href="menus/le_délice_des_sens.html" class="resto__card">
+                <img src="" alt="restaurant le délice des sens">
+                <div class="card-info">
+                    <div class="card-info__heading">
+                        <h4>Le délice des sens</h4>
+                        <p>Folie-Méricourt</p>
+                    </div>
+                    <div class="like"></div>
+                </div>
+            </a>
+        </section>
+    </main>
+    <footer>
+            <h5>ohmyfood</h5>
+            <a href="#"><i class="fa-regular fa-utensils"></i> Proposer un restaurant</a>
+            <a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a>
+            <a href="#">Mentions légales</a>
+            <a href="fake-mail@mailto.com">Contact</a>
+    </footer>
 </body>
 </html>
