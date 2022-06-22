@@ -1,13 +1,75 @@
-@import url(libs/utils/_variables.scss);
-@import url(libs/utils/_mixins.scss);
-@import url(libs/base/_base.scss);
-@import url(libs/base/_typography.scss);
-@import url(libs/components/_components.scss);
-@import url(libs/layout/_header.scss);
-@import url(libs/layout/_main.scss);
-@import url(libs/layout/_footer.scss);
-@import url(libs/layout/_form.scss);
-@import url(libs/layout/_dish-cards.scss);
-@import url(libs/layout/_restaurant-cards.scss);
-@import url(libs/pages/_index.scss);
-@import url(libs/pages/_menu.scss);/*# sourceMappingURL=styles.css.map */
+/*Color variables*/
+/*Font variables*/
+/*Gradient for button & heart backgrounds*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+html, h2, h3, h4 {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h5 {
+  font-family: "Shrikhand", cursive;
+}
+
+.heading {
+  text-align: center;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.6);
+  z-index: 1;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(224, 224, 224, 0.3);
+  text-align: center;
+}
+.search-form__search-bar {
+  padding: 18px 20px;
+  width: 100%;
+  font-size: 16px;
+  background-color: rgba(224, 224, 224, 0.502);
+  margin-bottom: 40px;
+}
+.search-form__search-bar input {
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  background: none;
+  margin: 0 10px;
+}
+.search-form h2 {
+  padding: 0 45px 10px;
+}
+.search-form p {
+  font-size: 18px;
+  padding: 0 40px;
+  opacity: 0.85;
+}
+.search-form__btn {
+  background: #FF79DA;
+  background: linear-gradient(174deg, #FF79DA 20%, #9356DC 90%);
+  font-size: 16px;
+  color: white;
+  margin: 30px 40px 50px 40px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  box-shadow: 0px 4px 8px 0px rgba(17, 17, 17, 0.3);
+}/*# sourceMappingURL=styles.css.map */

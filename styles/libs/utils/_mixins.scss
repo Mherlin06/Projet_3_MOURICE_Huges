@@ -1,7 +1,6 @@
-@import url(_variables.scss);
-
 /*Gradient for button & heart backgrounds*/
+
 @mixin gradient-bg {
     background: $secondary;
-    background: linear-gradient(174deg, $secondary 13%, $primary 62%);
+    background: linear-gradient(174deg, $secondary 20%, $primary 90%);
 }

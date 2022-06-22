@@ -1,13 +1,14 @@
-@import url(libs/utils/_variables.scss);
-@import url(libs/utils/_mixins.scss);
-@import url(libs/base/_base.scss);
-@import url(libs/base/_typography.scss);
-@import url(libs/components/_components.scss);
-@import url(libs/layout/_header.scss);
-@import url(libs/layout/_main.scss);
-@import url(libs/layout/_footer.scss);
-@import url(libs/layout/_form.scss);
-@import url(libs/layout/_dish-cards.scss);
-@import url(libs/layout/_restaurant-cards.scss);
-@import url(libs/pages/_index.scss);
-@import url(libs/pages/_menu.scss);
+@import 'libs/utils/_variables.scss';
+@import 'libs/utils/_mixins.scss';
+@import 'libs/base/_base.scss';
+@import 'libs/base/_typography.scss';
+@import 'libs/components/_components.scss';
+@import 'libs/layout/_header.scss';
+@import 'libs/layout/_main.scss';
+@import 'libs/layout/_footer.scss';
+@import 'libs/layout/_form.scss';
+@import 'libs/layout/_dish-cards.scss';
+@import 'libs/layout/_restaurant-cards.scss';
+@import 'libs/pages/_index.scss';
+@import 'libs/pages/_menu.scss';
+
