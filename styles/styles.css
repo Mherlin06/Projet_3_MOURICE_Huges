@@ -38,6 +38,10 @@ h1, h5 {
   box-shadow: 0px 4px 8px 0px rgba(17, 17, 17, 0.2);
 }
 
+.heart {
+  margin-right: 30px;
+}
+
 .heading {
   text-align: center;
   padding: 10px 20px;
@@ -46,6 +50,11 @@ h1, h5 {
 
 .instructions {
   padding: 50px 5%;
+}
+
+.resto {
+  padding: 50px 0 50px 5%;
+  background-color: rgba(224, 224, 224, 0.3);
 }
 
 .search-form {
@@ -124,4 +133,48 @@ h1, h5 {
 }
 .step-list__card p {
   font-weight: 600;
+}
+
+.resto-list {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.resto-list__card {
+  background-color: white;
+  margin: 20px 5% 0 0;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  height: 300px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 4px 8px 0px rgba(17, 17, 17, 0.2);
+  font-size: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.resto-list__card img {
+  height: 225px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 65%;
+     object-position: 50% 65%;
+}
+.resto-list__card .card-info {
+  height: 75px;
+  padding: 10px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+.resto-list__card .card-info__heading {
+  margin-right: auto;
+}
+.resto-list__card .card-info i {
+  font-size: 26px;
 }/*# sourceMappingURL=styles.css.map */

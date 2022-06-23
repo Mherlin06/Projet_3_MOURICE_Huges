@@ -1,0 +1,47 @@
+.resto-list{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__card{
+        background-color: white;
+        margin: 20px 5% 0 0;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        height: 300px;
+        width: 100%;
+        max-width: 500px;
+        @include box-shadow;
+        font-size: 18px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        img{
+            height: 225px;
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 65% ;
+        }
+
+        .card-info{
+            height: 75px;
+            padding: 10px;
+            color: black;
+            display: flex;
+            align-items: center;
+
+            &__heading{
+                margin-right: auto;
+            }
+
+            i{
+                font-size: 26px;
+            }
+
+        }
+    }
+}
