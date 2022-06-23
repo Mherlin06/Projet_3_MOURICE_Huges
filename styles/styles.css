@@ -11,7 +11,7 @@
 
 body {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 html, h2, h3, h4 {
@@ -22,11 +22,30 @@ h1, h5 {
   font-family: "Shrikhand", cursive;
 }
 
+.btn {
+  background: #FF79DA;
+  background: linear-gradient(174deg, #FF79DA 20%, #9356DC 90%);
+  font-size: 16px;
+  color: white;
+  margin: 30px 40px 50px 40px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  box-shadow: 0px 4px 8px 0px rgba(17, 17, 17, 0.2);
+}
+
 .heading {
   text-align: center;
   padding: 10px 20px;
   box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.6);
-  z-index: 1;
+}
+
+.instructions {
+  padding: 50px 5%;
 }
 
 .search-form {
@@ -49,6 +68,7 @@ h1, h5 {
   border: none;
   background: none;
   margin: 0 10px;
+  outline: none;
 }
 .search-form h2 {
   padding: 0 45px 10px;
@@ -58,18 +78,50 @@ h1, h5 {
   padding: 0 40px;
   opacity: 0.85;
 }
-.search-form__btn {
-  background: #FF79DA;
-  background: linear-gradient(174deg, #FF79DA 20%, #9356DC 90%);
-  font-size: 16px;
+
+.step-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.step-list__card {
+  box-shadow: 0px 4px 8px 0px rgba(17, 17, 17, 0.2);
+  width: 100%;
+  height: 80px;
+  margin-top: 20px;
+  background-color: rgba(224, 224, 224, 0.3);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.step-list__card div {
+  background-color: #9356DC;
   color: white;
-  margin: 30px 40px 50px 40px;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  box-shadow: 0px 4px 8px 0px rgba(17, 17, 17, 0.3);
+  font-size: 14px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -10px;
+}
+.step-list__card i {
+  font-size: 20px;
+  color: rgb(121, 121, 121);
+  margin: 0 20px 0 10px;
+}
+.step-list__card p {
+  font-weight: 600;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,36 @@
+
+.search-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $bg-grey;
+    text-align: center;
+
+    &__search-bar{
+        padding: 18px 20px;
+        width: 100%;
+        font-size: 16px;
+        background-color: rgba(224, 224, 224, 0.502);
+        margin-bottom: 40px;
+
+        input{
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            background: none;
+            margin: 0 10px;
+            outline: none;
+        }
+    }
+
+    h2{
+        padding: 0 45px 10px;
+    }
+
+    p{
+        font-size: 18px;
+        padding: 0 40px;
+        opacity: 0.85;
+    }
+
+}
