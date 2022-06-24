@@ -3,9 +3,12 @@
 $primary: #9356DC;
 $secondary: #FF79DA ;
 $tertiary: #99E2D0;
+$light-primary:hsl(267, 65%, 65%);
+$light-secondary:hsl(317, 100%, 75%);
 $bg-grey: rgba(224,224,224, 0.3);
 $footer-color:#505050;
 $main-gradient: linear-gradient(174deg, $secondary 20%, $primary 90%);
+$hover-gradient: linear-gradient(174deg, $light-secondary 20%, $light-primary 90%);
 
 /*Font variables*/
 
