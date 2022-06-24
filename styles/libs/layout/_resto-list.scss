@@ -19,6 +19,8 @@
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        position: relative;
+
 
         img{
             height: 225px;
@@ -33,15 +35,11 @@
             color: black;
             display: flex;
             align-items: center;
-
+            position: relative;
+            
             &__heading{
                 margin-right: auto;
             }
-
-            i{
-                font-size: 26px;
-            }
-
         }
     }
 }

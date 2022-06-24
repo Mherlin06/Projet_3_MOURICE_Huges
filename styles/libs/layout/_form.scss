@@ -7,11 +7,12 @@
     text-align: center;
 
     &__search-bar{
-        padding: 18px 20px;
+        padding: 18px 0 18px calc(50% - 80px);
         width: 100%;
         font-size: 16px;
         background-color: rgba(224, 224, 224, 0.502);
         margin-bottom: 40px;
+        display: flex;
 
         input{
             font-size: 14px;

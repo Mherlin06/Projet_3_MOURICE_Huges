@@ -2,7 +2,7 @@
 
 @mixin gradient-bg {
     background: $secondary;
-    background: linear-gradient(174deg, $secondary 20%, $primary 90%);
+    background: $main-gradient;
 }
 
 @mixin box-shadow {

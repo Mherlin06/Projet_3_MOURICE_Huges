@@ -19,6 +19,14 @@
         align-items: center;
         position: relative;
 
+        &:hover{
+            background-color: lighten($primary, 36);
+        }
+
+        &:hover > i{
+            color: $primary;
+        }
+
         div{
             background-color: $primary;
             color: white;
