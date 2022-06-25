@@ -1,0 +1,67 @@
+.courses{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    &__type{
+        font-size: 18px;
+        font-weight: 100;
+        margin-bottom: 5px;
+    }
+
+    .liner{
+        height: 3px;
+        width:40px;
+        background-color: $tertiary;
+    }
+}
+
+.courses-card{
+    background-color: #fff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-top: 15px;
+    @include box-shadow;
+    display: flex;
+    height: 70px;
+    overflow: hidden;
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 10px;
+        font-size: 16px;
+        
+        h3, p{
+            margin: auto 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    }
+
+    &__price{
+        padding: 15px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        align-items: flex-end;
+        flex-shrink: 0;
+    }
+
+    &__validate{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 60px;
+        background-color: $tertiary;
+        color: #fff;
+        font-size: 22px;
+    }
+}
