@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    flex-shrink: 0;
 
     &__type{
         font-size: 18px;
@@ -17,7 +18,9 @@
 
     @media screen and (min-width: 1024px) {
         margin: 30px 1% 0 1%;
+        width:30%;
     }
+
 }
 
 .courses-card{
@@ -32,20 +35,38 @@
     display: flex;
     height: 70px;
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     width: 100%;
+    cursor: pointer;
+
+    &:hover > &__validate{
+        width: 60px;
+    }
+
+    &:hover .fa-circle-check {
+        transform: rotate(2turn);
+        -webkit-transform: rotate(2turn);
+        -moz-transform: rotate(2turn);
+        -ms-transform: rotate(2turn);
+        -o-transform: rotate(2turn);
+    }
 
     &__title{
         display: flex;
         flex-direction: column;
         flex-grow: 1;
-        flex-shrink: 2;
         padding: 10px;
         font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         
         h3, p{
             margin: auto 0;
             overflow: hidden;
             text-overflow: ellipsis;
+            white-space: nowrap;
         }
 
     }
@@ -64,9 +85,46 @@
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        width: 60px;
+        width: 0px;
         background-color: $tertiary;
         color: #fff;
         font-size: 22px;
+        transition: all 0.25s ease-in-out;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
     }
+
+    .fa-circle-check{
+        transform: rotate(0turn);
+        -webkit-transform: rotate(0turn);
+        -moz-transform: rotate(0turn);
+        -ms-transform: rotate(0turn);
+        -o-transform: rotate(0turn);
+        transition: transform 0.4s ease-out;
+        -webkit-transition: transform 0.4s ease-out;
+        -moz-transition: transform 0.4s ease-out;
+        -ms-transition: transform 0.4s ease-out;
+        -o-transition: transform 0.4s ease-out;
+    }
+
+}
+
+.first-course{
+    animation: loading-menu 2s ease-out 0 1;
+    -webkit-animation: loading-menu 2s ease-out 0 1;
+    @include animate-course(loading-menu);
+}
+
+.main-course{
+    animation: loading-menu 2s ease-out 0.3s 1;
+    -webkit-animation: loading-menu 2s ease-out 0.3s 1;
+    @include animate-course(loading-menu);
+}
+
+.dessert{
+    animation: loading-menu 2s ease-out 0.6s 1;
+    -webkit-animation: loading-menu 2s ease-out 0.6s 1;
+    @include animate-course(loading-menu);
 }

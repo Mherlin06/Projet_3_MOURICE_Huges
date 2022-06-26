@@ -28,14 +28,25 @@
     
     &__heading{
         display: flex;
+        align-items: center;
         font-size: 20px;
         margin-bottom: 20px;
+
+        .heading-like{
+            position: relative;
+            margin-left: auto;
+            height: 30px;
+            i{
+                right:0;
+            }
+        }
     }
 
     &__section{
-        
+        width: 100%;
         @media screen and (min-width: 1024px) {
             display: flex;
+            justify-content: space-between;
         }
     }
 
