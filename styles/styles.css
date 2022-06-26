@@ -40,6 +40,11 @@ h1, h5 {
   background: linear-gradient(174deg, hsl(317deg, 100%, 75%) 20%, hsl(267deg, 65%, 65%) 90%);
   box-shadow: 0px 4px 15px 0px rgba(17, 17, 17, 0.4);
 }
+.btn--menu {
+  font-weight: 600;
+  margin: 50px auto 0 auto;
+  padding: 15px 50px;
+}
 
 .fa-heart {
   position: absolute;
@@ -180,6 +185,11 @@ footer i {
   width: 40px;
   background-color: #99E2D0;
 }
+@media screen and (min-width: 1024px) {
+  .courses {
+    margin: 30px 1% 0 1%;
+  }
+}
 
 .courses-card {
   background-color: #fff;
@@ -193,12 +203,13 @@ footer i {
   display: flex;
   height: 70px;
   overflow: hidden;
+  width: 100%;
 }
 .courses-card__title {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  flex-shrink: 1;
+  flex-shrink: 2;
   padding: 10px;
   font-size: 16px;
 }
@@ -328,7 +339,7 @@ footer i {
 
 .main-photo {
   width: 100%;
-  max-height: 500px;
+  max-height: 50vh;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
@@ -355,4 +366,9 @@ footer i {
   display: flex;
   font-size: 20px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .menu__section {
+    display: flex;
+  }
 }/*# sourceMappingURL=styles.css.map */
