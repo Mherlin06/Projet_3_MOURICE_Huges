@@ -13,14 +13,13 @@
         -o-border-radius: 15px;
         height: 300px;
         width: 100%;
-        max-width: 500px;
+        max-width: 550px;
         @include box-shadow;
         font-size: 18px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
         position: relative;
-
 
         img{
             height: 225px;
@@ -40,6 +39,13 @@
             &__heading{
                 margin-right: auto;
             }
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        justify-content: center;
+        &__card{
+            width: 40%;
         }
     }
 }

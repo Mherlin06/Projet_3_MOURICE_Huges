@@ -411,7 +411,7 @@ footer i {
   -o-border-radius: 15px;
   height: 300px;
   width: 100%;
-  max-width: 500px;
+  max-width: 550px;
   box-shadow: 0px 4px 8px 0px rgba(17, 17, 17, 0.2);
   font-size: 18px;
   overflow: hidden;
@@ -437,6 +437,14 @@ footer i {
 }
 .resto-list__card .card-info__heading {
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .resto-list {
+    justify-content: center;
+  }
+  .resto-list__card {
+    width: 40%;
+  }
 }
 
 .menu-main {
