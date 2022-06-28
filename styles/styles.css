@@ -387,6 +387,15 @@ footer i {
   font-weight: 600;
 }
 
+@media screen and (min-width: 1024px) {
+  .step-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .step-list__card {
+    width: 30%;
+  }
+}
 .resto-list {
   margin-top: 15px;
   display: flex;
