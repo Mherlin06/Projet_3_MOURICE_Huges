@@ -8,6 +8,9 @@ footer{
     a{
         color: white;
         margin: 5px;
+        &:hover{
+            color: $primary;
+        }
     }
 
     img{
