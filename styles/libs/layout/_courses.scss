@@ -3,6 +3,7 @@
     flex-direction: column;
     margin-top: 30px;
     flex-shrink: 0;
+    opacity: 0;
 
     &__type{
         font-size: 18px;
@@ -111,20 +112,22 @@
 
 }
 
+
+/*Animation that make the different courses sections appear one after another*/
+@include animate-course(apparition);
+
 .first-course{
-    animation: loading-menu 2s ease-out 0 1;
-    -webkit-animation: loading-menu 2s ease-out 0 1;
-    @include animate-course(loading-menu);
+    animation: apparition 0.5s ease-out 0s forwards ;
+    -webkit-animation: apparition 0.5s ease-out 0s forwards ;
 }
 
 .main-course{
-    animation: loading-menu 2s ease-out 0.3s 1;
-    -webkit-animation: loading-menu 2s ease-out 0.3s 1;
-    @include animate-course(loading-menu);
+    animation:apparition 0.5s ease-out 0.5s forwards ;
+    -webkit-animation:apparition 0.5s ease-out 0.5s forwards ;
 }
 
 .dessert{
-    animation: loading-menu 2s ease-out 0.6s 1;
-    -webkit-animation: loading-menu 2s ease-out 0.6s 1;
-    @include animate-course(loading-menu);
+    animation:apparition 0.5s ease-out 1s forwards ;
+    -webkit-animation:apparition 0.5s ease-out 1s forwards;
 }
+

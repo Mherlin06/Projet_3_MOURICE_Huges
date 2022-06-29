@@ -7,6 +7,9 @@ $light-primary:hsl(267, 65%, 65%);
 $light-secondary:hsl(317, 100%, 75%);
 $bg-grey: rgb(241, 241, 241);
 $footer-color:#505050;
+
+/*Gradient colors for buttons*/
+
 $main-gradient: linear-gradient(174deg, $secondary 20%, $primary 90%);
 $hover-gradient: linear-gradient(174deg, $light-secondary 20%, $light-primary 90%);
 
