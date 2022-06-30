@@ -236,7 +236,7 @@ h1, h5 {
   justify-content: center;
   align-items: center;
 }
-.heading h1 {
+.heading__logo {
   margin: auto;
 }
 .heading i {
