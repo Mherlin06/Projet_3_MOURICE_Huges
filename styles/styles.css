@@ -71,7 +71,7 @@ h1, h5 {
   -ms-transition: transform 0.25s ease-in-out;
   -o-transition: transform 0.25s ease-in-out;
 }
-.fa-heart:hover + .fa-heart--active {
+.fa-heart:active + .fa-heart--active {
   transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);

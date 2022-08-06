@@ -20,7 +20,7 @@
         -o-transition: transform 0.25s ease-in-out;
     }
 
-    &:focus + &--active{
+    &:active + &--active{
         transform: scale(1);
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
